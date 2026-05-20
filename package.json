@@ -1,0 +1,22 @@
+{
+  "name": "swapnil-nodejs-mongodb-with-redis",
+  "version": "1.0.0",
+  "description": "Node JS with Redis",
+  "private": true,
+  "author": "Swapnil Menkar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:banner": "node src/site_banner.js",
+    "dev:otp": "node src/otp_with_ttl.js",
+    "dev:json": "node src/json_with_hash.js",
+    "dev:queue": "node src/queue_emails.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "ioredis": "^5.10.1",
+    "mongoose": "^9.6.2"
+  }
+}
