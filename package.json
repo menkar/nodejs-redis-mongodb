@@ -12,9 +12,11 @@
     "dev:banner": "node src/site_banner.js",
     "dev:otp": "node src/otp_with_ttl.js",
     "dev:json": "node src/json_with_hash.js",
-    "dev:queue": "node src/queue_emails.js"
+    "dev:queue": "node src/queue_emails.js",
+    "dev:bullMq": "node src/bullMQ/api.js"
   },
   "dependencies": {
+    "bullmq": "^5.76.10",
     "express": "^5.2.1",
     "ioredis": "^5.10.1",
     "mongoose": "^9.6.2"
