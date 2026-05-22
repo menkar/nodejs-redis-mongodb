@@ -13,12 +13,16 @@
     "dev:otp": "node src/otp_with_ttl.js",
     "dev:json": "node src/json_with_hash.js",
     "dev:queue": "node src/queue_emails.js",
-    "dev:bullMq": "node src/bullMQ/api.js"
+    "dev:bullmq": "node src/bullMQ/api.js",
+    "dev:pubsub": "concurrently \"node src/pub-sub/api.js\" \"node src/pub-sub/subscriber.js\""
   },
   "dependencies": {
     "bullmq": "^5.76.10",
     "express": "^5.2.1",
     "ioredis": "^5.10.1",
     "mongoose": "^9.6.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
